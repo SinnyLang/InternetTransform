@@ -1,7 +1,7 @@
 # InternetTransform
 认证系统大作业 :-(
 
-  基于文件传输模型的认证系统
+  基于文件传输模型的认证系统 （假设两端互相知道它们对方的公钥）
   
   
     Acknowledgement：
