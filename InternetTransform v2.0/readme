@@ -1,0 +1,44 @@
+
+
+v2.0 版本上线多Bug。
+  使用方法：
+  1.发送消息：sendMessage [charset] [message]
+  2.上传文件：sendFile [charset] [absolute filepath]
+  3.下载文件：downloadFile [charset] [absolute filepath]
+    
+    *注意：
+    1.[charset] 目前支持 utf8/gbk/utf
+    2.大部分配置是写死的，它们是：
+    
+    传输文件缓冲区的默认长度： 1024 Kb
+    
+    客户端：
+      serverIP: localhost
+      clientID: 0x10001 (long)
+      clientPublik: 省略
+      clientPrivate： 省略
+    
+    服务端：
+      serverPort： 8000
+      serverID： 0xf0000 (long)
+      serverPublik: 省略
+      serverPrivate: 省略
+      防止重放时间阈值： 10000 ms
+      
+    
+  已知重大Bug：
+  1.不能传输长度为零的文件
+  2.使用传输sendMessage传输消息时，最好不要带中文，可能会出现编码错误情况
+  3.命令格式使用错误会出现异常
+  4.重复下载或者重复上传文件会出现异常
+  5.上传或者下载的文件不存在会出现异常
+  
+  Acknowledgement：
+    最后致谢：
+    zfz_linux_boy 51CTO博客，给了我大量思路，原博客链接：http://blog.51cto.com/zhangfengzhe/1712845
+      博客链接有图片加载不出来，可以另行参考博客：http://qcsdn.com/article/283307.html
+  
+  
+  
+  
+  
